@@ -7,3 +7,12 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+%w[
+  10045988
+  10032342
+  10042333
+  10074189
+].each do |ukprn|
+  Provider.find_or_create_by!(ukprn:)
+end
